@@ -1,0 +1,186 @@
+#
+# system.prop for u8800
+#
+
+rild.libpath=/system/lib/libril-qc-1.so
+rild.libargs=-d /dev/smd0
+persist.rild.nitz_plmn=
+persist.rild.nitz_long_ons_0=
+persist.rild.nitz_long_ons_1=
+persist.rild.nitz_long_ons_2=
+persist.rild.nitz_long_ons_3=
+persist.rild.nitz_short_ons_0=
+persist.rild.nitz_short_ons_1=
+persist.rild.nitz_short_ons_2=
+persist.rild.nitz_short_ons_3=
+ril.subscription.types=NV,RUIM
+dev.pm.dyn_samplingrate=1
+ro.telephony.default_network=0
+ro.telephony.ril_class=QualcommSharedRIL
+mobiledata.interfaces=rmnet0,gprs,ppp0
+
+# Radio
+ril.subscription.types=NV,RUIM
+ro.use_data_netmgrd=true
+ro.config.ehrpd=true
+ro.ril.shutdown=true
+ro.multi.rild=false
+
+# Camera
+debug.camera.landscape=true
+debug.camcorder.disablemeta=0
+
+# Allow emulated sdcard on /data/media
+persist.fuse_sdcard=true
+
+# USB
+persist.sys.usb.config=mass_storage,adb
+persist.service.adb.enable=1
+ro.additionalmounts=/storage/sdcard0
+ro.vold.switchablepair=/storage/sdcard1,/storage/sdcard0
+ro.emmc.sdcard.partition=14
+ro.vold.umsdirtyratio=50
+ro.emmc=1
+
+# Dalvik
+dalvik.vm.dexopt-data-only=1
+
+# OpenGLs
+debug.hwc.fakevsync=1
+debug.composition.type=gpu
+ro.opengles.version=131072
+debug.sf.hw=1
+debug.egl.hw=1
+com.qc.hardware=true
+DEVICE_PROVISIONED=1
+debug.performance.tuning=1
+video.accelerate.hw=1
+
+# Enable egl profiler
+debug.egl.profiler=1
+
+# WiFi
+wifi.interface=wlan0
+wifi.supplicant_scan_interval=15
+
+ro.sf.lcd_density=240
+
+# BT power class (1,2 or 3)
+qcom.bt.dev_power_class=2
+
+# Disable CheckJNI for faster process
+dalvik.vm.checkjni=false
+ro.kernel.android.checkjni=0
+
+# Media Quality
+ro.media.enc.jpeg.quality=100
+ro.media.dec.jpeg.memcap=8000000
+ro.media.enc.hprof.vid.bps=8000000
+ro.media.dec.aud.wma.enabled=1
+ro.media.dec.vid.wmv.enabled=1
+ro.media.cam.preview.fps=0
+ro.media.codec_priority_for_thumb=so
+
+# HSDPA low throughput
+ro.ril.disable.power.collapse=1
+
+# Sensor sleep control
+ro.ril.sensor.sleep.control=1
+ro.wifi.hotspotUI=1
+ro.tether.denied=false
+
+#Makes streaming videos stream faster
+media.stagefright.enable-player=true
+media.stagefright.enable-meta=true
+media.stagefright.enable-scan=true
+media.stagefright.enable-http=true
+media.stagefright.enable-aac=true
+media.stagefright.enable-qcp=true
+media.stagefright.enable-record=true
+
+# Tweaks for battery saving
+pm.sleep_mode=1
+usb_wakeup=enable
+proximity_incall=enable
+power_supply.wakeup=enable
+ro.config.hw_power_saving=1
+ro.config.hw_fast_dormancy=1
+ro.config.hw_quickpoweron=true
+persist.sys.use_dithering=0
+
+#improve battery under no signal -- need test
+ro.mot.eri.losalert.delay=1000
+
+# For sensor sleep control
+ro.ril.sensor.sleep.control=1
+
+# Qualcomm display settings -- Video acceleration and HW degugging
+debug.qctwa.statusbar=1
+debug.qctwa.preservebuf=1
+debug.qc.hardware=true
+com.qc.hardware=true
+
+#Bravia Engine Service
+ro.service.swiqi.supported=true
+persist.service.swiqi.enable=1
+
+# Xloud Engine
+ro.semc.sound_effects_enabled=true
+ro.semc.xloud.supported=true
+persist.service.xloud.enable=1
+media.xloud.enable=1
+media.xloud.supported=true
+
+# More precisely incall volume control
+ro.config.vc_call_vol_steps=15
+
+# Increase overall scrool speed and enable rotation to 270 degree
+windowsmgr.max_events_per_sec=170
+windowsmgr.support_rotation_270=true
+# Faster Scrolling
+ro.max.fling_velocity=12000
+ro.min.fling_velocity=8000
+
+### Disable Logers (safe battery + performance gain)
+### Disable checkin services, error reporting and logging
+ro.config.nocheckin=1
+profiler.force_disable_ulog=1
+profiler.force_disable_err_rpt=1
+
+### Touch tunning ###
+touch.presure.scale=0.001
+#ro.min_pointer_dur=
+
+ro.product.multi_touch_enabled=true
+ro.product.max_num_touch=2
+
+# Better signal reception
+persist.cust.tel.eons=1
+ro.config.hw_fast_dormancy=1
+
+# Modify MTU from 1500 to 1472 on 3G network for speeding up
+ro.ril.set.mtu1472=1
+
+#
+# system props for the data modules
+#
+ro.use_data_netmgrd=true
+persist.data_netmgrd_nint=8
+persist.data_netmgrd_mtu=1482
+
+#net speed tweaks
+net.tcp.buffersize.default=4096,87380,256960,4096, 16384,256960
+net.tcp.buffersize.wifi=4096,87380,256960,4096,163 84,256960
+net.tcp.buffersize.umts=4096,87380,256960,4096,163 84,256960
+net.tcp.buffersize.gprs=4096,87380,256960,4096,163 84,256960
+net.tcp.buffersize.edge=4096,87380,256960,4096,163 84,256960
+net.tcp.buffersize.hspda=4096,87380,256960,4096,16 384,256960
+net.tcp.buffersize.hspa=4096,87380,256960,4096,163 84,256960
+
+# Google DNS Tweak -- fastest dns
+net.rmnet0.dns1=8.8.8.8
+net.rmnet0.dns2=8.8.4.4
+net.ppp0.dns1=8.8.8.8
+net.ppp0.dns2=8.8.4.4
+net.dns1=8.8.8.8
+net.dns2=8.8.4.4
