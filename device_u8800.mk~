@@ -12,6 +12,9 @@ $(call inherit-product, frameworks/native/build/phone-hdpi-512-dalvik-heap.mk)
 # Vendor Makefile (if it exists)
 $(call inherit-product-if-exists, vendor/huawei/u8800/u8800-vendor.mk)
 
+# Copy prebuilts using prebuilt makefile (if it exists)
+$(call inherit-product-if-exists, device/huawei/u8800/prebuilt/prebuilt.mk)
+
 DEVICE_PACKAGE_OVERLAYS += device/huawei/u8800/overlay
 
 PRODUCT_AAPT_CONFIG := normal hdpi
