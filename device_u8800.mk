@@ -64,6 +64,7 @@ PRODUCT_PACKAGES += \
 
 # Other
 PRODUCT_PACKAGES += \
+    camera.msm7x30 \
     power.msm7x30 \
     dexpreopt
 
