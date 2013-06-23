@@ -30,9 +30,6 @@ ro.multi.rild=false
 debug.camera.landscape=true
 debug.camcorder.disablemeta=0
 
-# Allow emulated sdcard on /data/media
-persist.fuse_sdcard=true
-
 # USB
 persist.sys.usb.config=mass_storage,adb
 persist.service.adb.enable=1
