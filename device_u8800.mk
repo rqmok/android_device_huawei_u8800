@@ -106,7 +106,6 @@ PRODUCT_COPY_FILES += \
 	$(LOCAL_PATH)/root/init.huawei.rc:root/init.huawei.rc \
 	$(LOCAL_PATH)/root/init.target.rc:root/init.target.rc  \
 	$(LOCAL_PATH)/root/ueventd.qcom.rc:root/ueventd.qcom.rc \
-	$(LOCAL_PATH)/root/ueventd.rc:root/ueventd.rc \
 	$(LOCAL_PATH)/root/init.qcom.usb.sh:root/init.qcom.usb.sh \
 	$(LOCAL_PATH)/root/init.qcom.usb.rc:root/init.qcom.usb.rc
 
