@@ -76,6 +76,15 @@ on boot
 
     chmod 0444 /sys/devices/platform/msm_hsusb/gadget/usb_state
 
+    # Set permissions for sensors
+    chmod 0664 /dev/light
+    chmod 0664 /dev/proximity
+    chmod 0664 /dev/accel
+    chmod 0664 /dev/compass_aot
+    chmod 0664 /dev/akm8975_dev
+    chmod 0664 /dev/compass_dev
+    chmod 0664 /dev/gyro
+
 
 # Export GPIO56 for fusion targets to enable/disable hub
 service usbhub_init /system/bin/usbhub_init
