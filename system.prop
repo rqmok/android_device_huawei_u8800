@@ -117,21 +117,10 @@ debug.qctwa.preservebuf=1
 debug.qc.hardware=true
 com.qc.hardware=true
 
-#Bravia Engine Service
-ro.service.swiqi.supported=true
-persist.service.swiqi.enable=1
-
-# Xloud Engine
-ro.semc.sound_effects_enabled=true
-ro.semc.xloud.supported=true
-persist.service.xloud.enable=1
-media.xloud.enable=1
-media.xloud.supported=true
-
 # More precisely incall volume control
 ro.config.vc_call_vol_steps=15
 
-# Increase overall scrool speed and enable rotation to 270 degree
+# Increase overall scroll speed and enable rotation to 270 degrees
 windowsmgr.max_events_per_sec=170
 windowsmgr.support_rotation_270=true
 # Faster Scrolling

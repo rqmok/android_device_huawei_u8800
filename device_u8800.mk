@@ -103,9 +103,11 @@ PRODUCT_COPY_FILES += \
 	$(LOCAL_PATH)/root/init.emmc.rc:root/init.emmc.rc \
 	$(LOCAL_PATH)/root/init.qcom.sh:root/init.qcom.sh \
 	$(LOCAL_PATH)/root/init.huawei.rc:root/init.huawei.rc \
+	$(LOCAL_PATH)/root/init.qcom.rc:root/init.qcom.rc \
 	$(LOCAL_PATH)/root/ueventd.qcom.rc:root/ueventd.qcom.rc \
 	$(LOCAL_PATH)/root/init.qcom.usb.sh:root/init.qcom.usb.sh \
-	$(LOCAL_PATH)/root/init.qcom.usb.rc:root/init.qcom.usb.rc
+	$(LOCAL_PATH)/root/init.qcom.usb.rc:root/init.qcom.usb.rc \
+	$(LOCAL_PATH)/root/init.target.rc:root/init.target.rc
 
 $(call inherit-product, $(SRC_TARGET_DIR)/product/languages_full.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base.mk)
