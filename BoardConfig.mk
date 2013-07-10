@@ -133,3 +133,6 @@ TARGET_RELEASETOOL_OTA_FROM_TARGET_SCRIPT := ./device/huawei/u8800/releasetools/
 
 # Use this flag if the board has a ext4 partition larger than 2gb
 #BOARD_HAS_LARGE_FILESYSTEM := true
+
+# Custom Script for building Google Apps
+BUILD_GAPPS := true
