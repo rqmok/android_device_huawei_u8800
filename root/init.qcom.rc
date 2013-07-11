@@ -5,6 +5,18 @@ on init
     # Set permissions for persist partition
     mkdir /persist 0771 system system
 
+    # Mount sdcard
+    mkdir /storage 0775 system system
+    mkdir /storage/sdcard1 0000 system system
+    mkdir /storage/sdcard0 0000 system system
+
+    export EXTERNAL_STORAGE /storage/sdcard1
+
+    symlink /storage/sdcard1 /mnt/sdcard
+    symlink /storage/sdcard1 /sdcard
+    symlink /storage/sdcard0 /mnt/emmc
+    symlink /storage/sdcard0 /HWUserData
+
 on early-boot
     # set RLIMIT_MEMLOCK to 64MB
     setrlimit 8 67108864 67108864
