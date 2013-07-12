@@ -2,7 +2,7 @@
 
 # This script is used to copy the Google Apps to the final build
 
-GAPPS_PATH := $(call my-dir)/Gapps/system
+GAPPS_PATH := device/huawei/u8800/gapps/Gapps/system
 
 # addon.d
 PRODUCT_COPY_FILES += \
