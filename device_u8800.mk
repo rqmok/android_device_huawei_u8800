@@ -102,7 +102,6 @@ PRODUCT_COPY_FILES += \
 	$(LOCAL_PATH)/root/fstab.u8800:root/fstab.u8800 \
 	$(LOCAL_PATH)/root/init.emmc.rc:root/init.emmc.rc \
 	$(LOCAL_PATH)/root/init.qcom.sh:root/init.qcom.sh \
-	$(LOCAL_PATH)/root/init.huawei.rc:root/init.huawei.rc \
 	$(LOCAL_PATH)/root/init.qcom.rc:root/init.qcom.rc \
 	$(LOCAL_PATH)/root/ueventd.qcom.rc:root/ueventd.qcom.rc \
 	$(LOCAL_PATH)/root/init.qcom.usb.sh:root/init.qcom.usb.sh \
