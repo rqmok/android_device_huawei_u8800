@@ -63,7 +63,8 @@ PRODUCT_PACKAGES += \
 
 # Wifi
 PRODUCT_PACKAGES += \
-    lib_driver_cmd_wext
+    lib_driver_cmd_wext \
+    libreadmac
 
 # Other
 PRODUCT_PACKAGES += \
