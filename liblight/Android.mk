@@ -11,7 +11,7 @@
 # WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 # See the License for the specific language governing permissions and
 # limitations under the License.
-ifeq ($(TARGET_PROVIDES_LIBLIGHT),true)
+ifeq ($(TARGET_PROVIDES_LIBLIGHTS),true)
 LOCAL_PATH:= $(call my-dir)
 # HAL module implemenation stored in
 # hw/<COPYPIX_HARDWARE_MODULE_ID>.<ro.board.platform>.so
