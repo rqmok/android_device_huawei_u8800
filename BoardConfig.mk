@@ -1,4 +1,4 @@
-USE_CAMERA_STUB := false
+USE_CAMERA_STUB := true
 
 # inherit from the proprietary version
 -include vendor/huawei/u8800/BoardConfigVendor.mk
