@@ -72,6 +72,7 @@ PRODUCT_PACKAGES += \
 
 # Other
 PRODUCT_PACKAGES += \
+    libhardware_legacy \
     camera.msm7x30 \
     power.msm7x30 \
     dexpreopt
