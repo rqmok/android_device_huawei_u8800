@@ -9,6 +9,7 @@ on init
     mkdir /storage 0775 system system
     mkdir /storage/sdcard1 0000 system system
     mkdir /storage/sdcard0 0000 system system
+    mkdir /storage/usbdisk 0000 system system
 
     export EXTERNAL_STORAGE /storage/sdcard1
 
@@ -16,6 +17,8 @@ on init
     symlink /storage/sdcard1 /sdcard
     symlink /storage/sdcard0 /mnt/emmc
     symlink /storage/sdcard0 /HWUserData
+    symlink /storage/usbdisk /usbdisk
+    symlink /storage/usbdisk /mnt/usbdisk
 
 on early-boot
     # set RLIMIT_MEMLOCK to 64MB
