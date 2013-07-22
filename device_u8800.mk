@@ -29,8 +29,6 @@ PRODUCT_PACKAGES += \
 
 # Video
 PRODUCT_PACKAGES += \
-    libOmxCore \
-    libOmxVdec \
     libmm-omxcore \
     libstagefrighthw
     
