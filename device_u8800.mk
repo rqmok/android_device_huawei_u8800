@@ -15,6 +15,9 @@ $(call inherit-product-if-exists, vendor/huawei/u8800/u8800-vendor.mk)
 # Call Gapps makefile (if exists)
 $(call inherit-product-if-exists, device/huawei/u8800/gapps/Gapps.mk)
 
+# Call Script MakeFile (if exists)
+$(call inherit-product-if-exists, device/huawei/u8800/scripts/scripts.mk)
+
 DEVICE_PACKAGE_OVERLAYS += device/huawei/u8800/overlay
 
 PRODUCT_AAPT_CONFIG := normal hdpi
