@@ -9,7 +9,7 @@ $(call inherit-product, device/common/gps/gps_us_supl.mk)
 # Use standard dalvik heap sizes
 $(call inherit-product, frameworks/native/build/phone-hdpi-512-dalvik-heap.mk)
 
-# Vendor Makefile (if it exists)
+# Vendor Makefile (if exists)
 $(call inherit-product-if-exists, vendor/huawei/u8800/u8800-vendor.mk)
 
 # Call Gapps makefile (if exists)
@@ -17,6 +17,9 @@ $(call inherit-product-if-exists, device/huawei/u8800/gapps/Gapps.mk)
 
 # Call Script MakeFile (if exists)
 $(call inherit-product-if-exists, device/huawei/u8800/scripts/scripts.mk)
+
+# Call prebuilt script (if exists)
+$(call inherit-product-if-exists, device/huawei/u8800/prebuilt/prebuilt.mk)
 
 DEVICE_PACKAGE_OVERLAYS += device/huawei/u8800/overlay
 

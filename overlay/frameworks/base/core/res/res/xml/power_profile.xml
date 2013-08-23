@@ -19,20 +19,20 @@
 
 <device name="Android">
   <item name="none">0</item>
-  <item name="screen.on">40</item> <!-- Estimated -->
-  <item name="bluetooth.active">80</item> <!-- In call -->
+  <item name="screen.on">90</item> <!-- Estimated -->
+  <item name="bluetooth.active">142</item> <!-- In call -->
   <item name="bluetooth.on">0.3</item>
   <!-- CPU wakelock held for 830ms on bluetooth headset at command. 43mA * 830 -->
   <item name="bluetooth.at">35690</item>
-  <item name="screen.full">120</item> <!-- Estimated -->
+  <item name="screen.full">200</item> <!-- Estimated -->
   <item name="wifi.on">4</item>
-  <item name="wifi.active">100</item>
-  <item name="wifi.scan">120</item>
-  <item name="dsp.audio">88</item> <!-- Estimated -->
-  <item name="dsp.video">88</item> <!-- Estimated -->
+  <item name="wifi.active">120</item>
+  <item name="wifi.scan">220</item>
+  <item name="dsp.audio">106</item> <!-- Estimated -->
+  <item name="dsp.video">106</item> <!-- Estimated -->
   <item name="radio.active">300</item>
-  <item name="gps.on">70</item>
-  <item name="battery.capacity">1400</item>
+  <item name="gps.on">170</item>
+  <item name="battery.capacity">1930</item>
   <item name="radio.scanning">70</item>
   <array name="radio.on"> <!-- Strength 0 to BINS-1 -->
       <value>3</value>
@@ -53,16 +53,20 @@
     <value>1804800</value>
   </array>
   <!-- Power consumption in suspend -->
-  <item name="cpu.idle">2.8</item> <!-- from /sys/class/power_supply/battery/current_now -->
+  <item name="cpu.idle">3.0</item> <!-- from /sys/class/power_supply/battery/current_now -->
   <!-- Power consumption at different speeds -->
   <array name="cpu.active"> <!-- Estimated -->
-      <value>30</value>
-      <value>40</value>
-      <value>50</value>
       <value>60</value>
-      <value>75</value>
-      <value>80</value>
-      <value>110</value>
-      <value>120</value>
+      <value>74.7</value>
+      <value>120.6</value>
+      <value>154.9</value>
+      <value>163.8</value>
+      <value>173.2</value>
+      <value>184.5</value>
+      <value>196.2</value>
+      <value>208.9</value>
+      <value>220.1</value>
+      <value>220.1</value>
+      <value>220.1</value>
   </array>
 </device>
