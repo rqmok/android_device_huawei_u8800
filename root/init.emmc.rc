@@ -1,2 +1,2 @@
 on emmc-fs
-    mount_all ./fstab.u8800
+    mount_all ./fstab.sdcard
